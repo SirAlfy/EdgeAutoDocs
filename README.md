@@ -28,6 +28,12 @@ To send the data to our Datacenter run the following command to execute it once
 
 or you can schedule it by editing your crontab job.
 
+`sudo crontab -e`
+
+Then put the following in with the following format
+
+`minute hour day week moth /path/to/yourShellScript`
+
 `55 23 * * * /path/to/yourShellScript`
 
 This code will schedule it to run at 11:55 pm each night.
