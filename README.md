@@ -47,3 +47,6 @@ Mysql : https://dev.mysql.com/downloads/file/?id=482330
 Php-Mysql : https://dev.mysql.com/downloads/repo/apt/
 
 Php : https://www.php.net/distributions/php-7.0.33.tar.gz
+
+#License
+
