@@ -20,8 +20,8 @@ One for incoming connections and one for outgoing.
 5. Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8001.
 
 #### Outgoing Firewall Rule:
-1. Incoming: Name it something memorable, we used TCPIN
-2. Direction of traffic: Ingress
+1. Name it something memorable, we used TCPOUT
+2. Direction of traffic: Egress
 3. Target Tags: edgeauto
 4. Source IP Ranges: 0.0.0.0/0
 5. Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8002.
