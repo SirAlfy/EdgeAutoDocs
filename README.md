@@ -28,6 +28,9 @@ This code will schedule it to run at 11:55 pm each night.
 
 # Dependencies
 Apache *will add links*
+
 Mysql
+
 Php-Mysql
+
 Php
