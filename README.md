@@ -1,5 +1,5 @@
 # EdgeAutoDocumentation
-Documentation of my portion of the EdgeAuto Project
+This is the documentation for the Virtual Machine portion of the project EdgeAuto.
 
 # Initial Setup
 Pull from my github
