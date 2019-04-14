@@ -26,7 +26,7 @@ To send the data to our Datacenter run the following command to execute it once
 
 `php writeToNas.php`
 
-or you can schedule it by editing your crontab job.
+or you can schedule it by editing your crontab
 
 `sudo crontab -e`
 
