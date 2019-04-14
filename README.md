@@ -27,10 +27,10 @@ This code will schedule it to run at 11:55 pm each night.
 
 
 # Dependencies
-Apache *will add links*
+Apache : https://httpd.apache.org/download.cgi#apache24
 
-Mysql
+Mysql : https://dev.mysql.com/downloads/file/?id=482330
 
-Php-Mysql
+Php-Mysql : https://dev.mysql.com/downloads/repo/apt/
 
-Php
+Php : https://www.php.net/distributions/php-7.0.33.tar.gz
