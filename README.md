@@ -16,7 +16,7 @@ Incoming Firewall Rule:
 1. Name it something memorable, we used TCPIN
 2. Direction of traffic: Ingress
 3. Target Tags: edgeauto
-4. Source IP Ranges: 0.0.0.0/0
+4. Source IP Ranges: 0.0.0.0/0 This is used for all ranges.
 5. Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8001.
 
 Outgoing Firewall Rule:
