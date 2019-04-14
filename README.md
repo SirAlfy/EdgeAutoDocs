@@ -12,44 +12,38 @@ Navigate to VPC Network and select Firewall Rules
 We are creating 2 Firewall Rules.
 One for incoming connections and one for outgoing.
 
-Incoming: Name it something memorable, we used TCPIN
+Incoming Firewall Rule:
+1. Name it something memorable, we used TCPIN
+2. Direction of traffic: Ingress
+3. Target Tags: edgeauto
+4. Source IP Ranges: 0.0.0.0/0
+5. Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8001.
 
-Direction of traffic: Ingress
-
-Target Tags: edgeauto
-
-Source IP Ranges: 0.0.0.0/0
-
-Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8001.
-
-Incoming: Name it something memorable, we used TCPIN
-
-Direction of traffic: Egress
-
-Target Tags: edgeauto
-
-Source IP Ranges: 0.0.0.0/0
-
-Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8002.
+Outgoing Firewall Rule:
+1. Incoming: Name it something memorable, we used TCPIN
+2. Direction of traffic: Ingress
+3. Target Tags: edgeauto
+4. Source IP Ranges: 0.0.0.0/0
+5. Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8002.
 
 
 
 ### Nodes
 On the left Click Instance Templates
 
-Name your Instance: We used the scheme edgeauto-#
-Select  machine type: 1vCPU with 3.75GB of memory
-Select Boot Disk: Ubuntu 16.04 LTS
-Allow HTTP Traffic and HTTPS Traffic
-Select Networking and give the template a Network Tag. We used edgeauto.
+1. Name your Instance: We used the scheme edgeauto-#
+2. Select  machine type: 1vCPU with 3.75GB of memory
+3. Select Boot Disk: Ubuntu 16.04 LTS
+4. Allow HTTP Traffic and HTTPS Traffic
+5. Select Networking and give the template a Network Tag. We used edgeauto.
 
 Create the template. Now when you want to create a node you can use that template.
 ### Data Center
-For our DataCenter:
-Machine Type: 2vCPUs
-Boot Disk: Ubuntu 16.04 LTS
-Allow HTTP/HTTPS Traffic
-Add a Network Tag.
+1. For our DataCenter:
+2. Machine Type: 2vCPUs
+3. Boot Disk: Ubuntu 16.04 LTS
+4. Allow HTTP/HTTPS Traffic
+5. Add a your Network Tag. Ours was edgeauto.
 
 Create the VM
 
@@ -60,7 +54,7 @@ Pull from my github
 
 Navigate to that folder
 
-`cd EdgeAutoDocumentation`
+`cd EdgeAutoDocs`
 
 Run the bash file to start installing the dependencies
 
