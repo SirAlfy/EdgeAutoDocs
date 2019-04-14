@@ -1,7 +1,7 @@
 # EdgeAutoDocumentation
 Documentation of my portion of the EdgeAuto Project
-# Initial Setup
 
+# Initial Setup
 Pull from my github
 
 `git clone https://github.com/SirAlfy/EdgeAutoDocs.git`
@@ -48,6 +48,6 @@ Php-Mysql : https://dev.mysql.com/downloads/repo/apt/
 
 Php : https://www.php.net/distributions/php-7.0.33.tar.gz
 
-#License
+# License
 
 Use it if you want. I'd prefer if you cited me if you just copy past, but I don't mind. Most of this code is pretty simple.
