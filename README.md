@@ -50,4 +50,4 @@ Php : https://www.php.net/distributions/php-7.0.33.tar.gz
 
 # License
 
-Use it if you want. I'd prefer if you cited me if you just copy past, but I don't mind. Most of this code is pretty simple.
+Use it if you want. I'd prefer if you cited me if you just copy paste, but I don't mind. Most of this code is pretty simple.
