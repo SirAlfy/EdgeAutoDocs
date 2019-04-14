@@ -1,7 +1,59 @@
 # EdgeAutoDocumentation
 This is the documentation for the Virtual Machine portion of the project EdgeAuto.
 
-# Initial Setup
+# VM setup on Google Cloud
+
+Go to console.cloud.google.com and login. Navigate to the compute engine.
+
+### Firewall Rules
+
+Navigate to VPC Network and select Firewall Rules
+
+We are creating 2 Firewall Rules.
+One for incoming connections and one for outgoing.
+
+Incoming: Name it something memorable, we used TCPIN
+
+Direction of traffic: Ingress
+
+Target Tags: edgeauto
+
+Source IP Ranges: 0.0.0.0/0
+
+Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8001.
+
+Incoming: Name it something memorable, we used TCPIN
+
+Direction of traffic: Egress
+
+Target Tags: edgeauto
+
+Source IP Ranges: 0.0.0.0/0
+
+Protocols and Ports: Allow all or the specific ports you are using. Check TCP and put the port you want to use. We used 8002.
+
+
+
+### Nodes
+On the left Click Instance Templates
+
+Name your Instance: We used the scheme edgeauto-#
+Select  machine type: 1vCPU with 3.75GB of memory
+Select Boot Disk: Ubuntu 16.04 LTS
+Allow HTTP Traffic and HTTPS Traffic
+Select Networking and give the template a Network Tag. We used edgeauto.
+
+Create the template. Now when you want to create a node you can use that template.
+### Data Center
+For our DataCenter:
+Machine Type: 2vCPUs
+Boot Disk: Ubuntu 16.04 LTS
+Allow HTTP/HTTPS Traffic
+Add a Network Tag.
+
+Create the VM
+
+# Initial Setup on VMs
 Pull from my github
 
 `git clone https://github.com/SirAlfy/EdgeAutoDocs.git`
