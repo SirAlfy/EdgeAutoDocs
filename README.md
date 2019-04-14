@@ -4,7 +4,7 @@ Documentation of my portion of the EdgeAuto Project
 
 Pull from my github
 
-`git clone https://github.com/SirAlfy/EdgeAutoDocumentation.git`
+`git clone https://github.com/SirAlfy/EdgeAutoDocs.git`
 
 Navigate to that folder
 
