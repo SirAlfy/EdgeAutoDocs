@@ -34,11 +34,9 @@ Then put the following in with the following format
 
 `Minute(0-59) Hour(0-23) Day(1-31) Month(1-12) Day of Week (0-6)(0=Sunday) /path/to/yourShellScript`
 
-`* * * * * /path/to/yourShellScript`
+This code will schedule it to run at 11:55 pm each night.
 
 `55 23 * * * /path/to/yourShellScript`
-
-This code will schedule it to run at 11:55 pm each night.
 
 
 # Dependencies
