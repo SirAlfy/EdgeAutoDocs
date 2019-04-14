@@ -1,8 +1,8 @@
 
 <?php
-$host = "10.142.0.24";
-$port = 8002;
-$Nas = "104.196.147.215";
+$host = "10.142.0.24"; // This VMs internal IP Address.
+$port = 8002; // Outgoing port.
+$DC = "104.196.147.215"; // DataCenter
 $db = new PDO("mysql:host=localhost;dbname=EdgeAuto", 'edgeauto', 'edgeauto19!');
 $result = $db->query("Select * from message");
 $outArray = array();
@@ -24,7 +24,7 @@ foreach($result as $row) {
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP) or die("Could not create socket\n");
 socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1);
 socket_bind($socket, $host, $port) or die("Could not bind to socket\n");
-socket_connect($socket, $Nas);
+socket_connect($socket, $DC);
 socket_write($socket, $comma_sep);
 /*
 fwrite($socket, $comma_sep);
