@@ -32,7 +32,9 @@ or you can schedule it by editing your crontab job.
 
 Then put the following in with the following format
 
-`minute hour day week moth /path/to/yourShellScript`
+`Minute(0-59) Hour(0-23) Day(1-31) Month(1-12) Day of Week (0-6)(0=Sunday) /path/to/yourShellScript`
+
+`* * * * * /path/to/yourShellScript`
 
 `55 23 * * * /path/to/yourShellScript`
 
