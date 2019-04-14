@@ -15,3 +15,5 @@ echo -e "\n Installing mysql-server"
 sudo apt install mysql-server -y
 echo -e "\n Installing PHP"
 sudo apt install php libapache2-mod-php php-mysql
+echo -e "\n Installing screen"
+sudo apt install screen
