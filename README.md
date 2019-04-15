@@ -71,7 +71,7 @@ followed by running the socket.
 
 To send the data to our Datacenter run the following command to execute it once
 
-`php writeToNas.php`
+`php writeToDC.php`
 
 or you can schedule it by editing your crontab
 
