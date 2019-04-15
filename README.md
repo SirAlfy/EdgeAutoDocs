@@ -67,7 +67,7 @@ After installation you are able to run the socket. I would recommend doing this 
 
 followed by running the socket.
 
-`php serverSocket.php`
+`php nodeSocket.php`
 
 To send the data to our Datacenter run the following command to execute it once
 
