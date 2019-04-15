@@ -4,7 +4,7 @@ This is the documentation for the Virtual Machine portion of the project EdgeAut
 
 # VM setup on Google Cloud
 
-Go to console.cloud.google.com and login. 
+Go to [Google Cloud Console](console.cloud.google.com) and login. 
 
 ### Firewall Rules
 
