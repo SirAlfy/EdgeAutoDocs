@@ -78,9 +78,9 @@ After installation you are able to run the socket. I would recommend doing this 
 
 `Screen -S PhpSocket`
 
-followed by running the socket.
+followed by running the socket. Node for edge nodes Datacenter for the DataCenter.
 
-`php nodeSocket.php`
+`php nodeSocket.php` or `php datacenterSocket.php` 
 
 To send the data to our Datacenter run the following command to execute it once
 
