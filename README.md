@@ -81,13 +81,13 @@ Then put the following in with the following format
 
 `Minute(0-59) Hour(0-23) Day(1-31) Month(1-12) Day of Week (0-6)(0=Sunday) /path/to/yourShellScript`
 
-This code will schedule it to run at 11:55 pm each night.
+We set our VMs to stagger their writing to the datacenter by 15 minutes.
 
-`55 23 * * * /path/to/yourShellScript` //for every night at 11:55pm
+VM1 `0 * * * * /EdgeAutoDocs/writeToDC.php`
+VM2 `15 * * * * /EdgeAutoDocs/writeToDC.php`
+VM3 `30 * * * * /EdgeAutoDocs/writeToDC.php`
+VM4 `45 * * * * /EdgeAutoDocs/writeToDC.php`
 
-We set up our script to run every 30 minutes.
-
-`*/30 * * * * /path/to/yourShellScript`
 
 
 # Dependencies
