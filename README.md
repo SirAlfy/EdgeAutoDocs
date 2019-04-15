@@ -4,7 +4,7 @@ This is the documentation for the Virtual Machine portion of the project EdgeAut
 
 # VM setup on Google Cloud
 
-Go to console.cloud.google.com and login. Navigate to the compute engine.
+Go to console.cloud.google.com and login. 
 
 ### Firewall Rules
 
@@ -30,7 +30,7 @@ One for incoming connections and one for outgoing.
 
 
 ### Nodes
-On the left Click Instance Templates
+Navigate to the compute engine and on the left Click Instance Templates.
 
 1. Name your Instance: We used the scheme edgeauto-#
 2. Select  machine type: 1vCPU with 3.75GB of memory
@@ -40,11 +40,11 @@ On the left Click Instance Templates
 
 Create the template. Now when you want to create a node you can use that template.
 ### Data Center
-1. For our DataCenter:
-2. Machine Type: 2vCPUs
-3. Boot Disk: Ubuntu 16.04 LTS
-4. Allow HTTP/HTTPS Traffic
-5. Add a your Network Tag. Ours was edgeauto.
+For our DataCenter:
+1. Machine Type: 2vCPUs
+2. Boot Disk: Ubuntu 16.04 LTS
+3. Allow HTTP/HTTPS Traffic
+4. Add a your Network Tag. Ours was edgeauto.
 
 Create the VM
 
@@ -83,7 +83,11 @@ Then put the following in with the following format
 
 This code will schedule it to run at 11:55 pm each night.
 
-`55 23 * * * /path/to/yourShellScript`
+`55 23 * * * /path/to/yourShellScript` //for every night at 11:55pm
+
+We set up our script to run every 30 minutes.
+
+`*/30 * * * * /path/to/yourShellScript`
 
 
 # Dependencies
