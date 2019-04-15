@@ -3,7 +3,7 @@
 This is the documentation for the Virtual Machine portion of the project EdgeAuto.
 ##### Table of Contents
 
-[Google Cloud Setup](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#vm-setup-on-google-cloud)
+[Google Cloud Setup](1)
 
 [Nodes](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#nodes)
 
