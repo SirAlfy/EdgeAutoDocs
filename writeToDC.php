@@ -1,8 +1,5 @@
 <?php
-$host = ""; 	//VMs Internal IP
-$port = 8002;		//VMs Port
-$DC = "";//DataCenter IP
-$DCport = 8001;		//DataCenter Port
+include 'VMInfo.php';
 $db = new PDO("mysql:host=localhost;dbname=EdgeAuto", 'edgeauto', 'edgeauto19!');
 $result = $db->query("Select * from message");
 $outArray = array();
