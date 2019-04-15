@@ -6,15 +6,15 @@ This is the documentation for the Virtual Machine portion of the project EdgeAut
 
 [Google Cloud Setup](/README.md#vm-setup-on-google-cloud)
 
-[Nodes](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#nodes)
+[Nodes](/README.md#nodes)
 
-[DataCenter](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#data-center)
+[DataCenter](/README.md#data-center)
 
-[Initial VM Setup](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#initial-setup-on-vms)
+[Initial VM Setup](/README.md#initial-setup-on-vms)
 
-[Dependencies](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#dependencies)
+[Dependencies](/README.md#dependencies)
 
-[License](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#license)
+[License](/README.md#license)
 
 # VM setup on Google Cloud
 
