@@ -10,17 +10,17 @@ $comma_sep = "";
 $LastMsg_ID=0;
 //Extract data from the DB and put it into a string to be sent.
 foreach($result as $row) {
-		$LastMsg_ID = $row['message_id'];
+	$LastMsg_ID = $row['message_id'];
         $outArray[] = $row['arb_id'];
         $outArray[] = $row['message'];
         $outArray[] = $row['latitude'];
         $outArray[] = $row['longitude'];
         $outArray[] = $row['cantime'];
         $outArray[] = $row['session_id'];
-		$LastSess_ID = $row['session_id'];
-		$comma_sep .= implode(",",$outArray);
-		$comma_sep .= ";";
-		$outArray = array();
+	$LastSess_ID = $row['session_id'];
+	$comma_sep .= implode(",",$outArray);
+	$comma_sep .= ";";
+	$outArray = array();
 } 
 //Create a socket and connect to it. Then connect to the port on the datacenter and write the data.
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP) or die("Could not create socket\n");
