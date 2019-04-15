@@ -1,10 +1,12 @@
 <?php
-include 'VMInfo.php';
+include 'VMInfo.php'; //import global Variables
+
 $db = new PDO("mysql:host=localhost;dbname=EdgeAuto", 'edgeauto', 'edgeauto19!');
 $result = $db->query("Select * from message");
 $outArray = array();
 $comma_sep = "";
 $LastMsg_ID=0;
+
 //Extract data from the DB and put it into a string to be sent.
 foreach($result as $row) {
 	$LastMsg_ID = $row['message_id'];
