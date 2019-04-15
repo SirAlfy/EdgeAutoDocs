@@ -84,8 +84,11 @@ Then put the following in with the following format
 We set our VMs to stagger their writing to the datacenter by 15 minutes.
 
 VM1 `0 * * * * /EdgeAutoDocs/writeToDC.php`
+
 VM2 `15 * * * * /EdgeAutoDocs/writeToDC.php`
+
 VM3 `30 * * * * /EdgeAutoDocs/writeToDC.php`
+
 VM4 `45 * * * * /EdgeAutoDocs/writeToDC.php`
 
 
