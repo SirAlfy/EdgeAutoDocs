@@ -52,7 +52,9 @@ Navigate to the compute engine and on the left Click Instance Templates.
 4. Allow HTTP Traffic and HTTPS Traffic
 5. Select Networking and give the template a Network Tag. We used edgeauto.
 
-Create the template. Now when you want to create a node you can use that template.
+Create the template. Now when you want to create a node you can use that template by clicking create instance and then creating it with the template we just made.
+
+
 ### Data Center
 For our DataCenter:
 1. Machine Type: 2vCPUs
