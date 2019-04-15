@@ -79,9 +79,9 @@ Run the bash file to start installing the dependencies
 
 After installation you are able to run the socket. I would recommend doing this in a screen
 
-`Screen -S PhpSocket`
+`screen -S PhpSocket`
 
-followed by running the socket. Node for edge nodes Datacenter for the DataCenter.
+followed by running the socket. Node for edge nodes and Datacenter for the DataCenter.
 
 `php nodeSocket.php` or `php datacenterSocket.php` 
 
@@ -99,13 +99,13 @@ Then put the following in with the following format
 
 We set our VMs to stagger their writing to the datacenter by 15 minutes.
 
-VM1 `0 * * * * /EdgeAutoDocs/writeToDC.php`
+VM1 `0 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:00pm
 
-VM2 `15 * * * * /EdgeAutoDocs/writeToDC.php`
+VM2 `15 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:15pm
 
-VM3 `30 * * * * /EdgeAutoDocs/writeToDC.php`
+VM3 `30 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:30pm
 
-VM4 `45 * * * * /EdgeAutoDocs/writeToDC.php`
+VM4 `45 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:45pm
 
 
 
