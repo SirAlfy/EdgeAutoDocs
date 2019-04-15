@@ -1,9 +1,10 @@
 # EdgeAutoDocumentation
 #### By Dante Gennero
 This is the documentation for the Virtual Machine portion of the project EdgeAuto.
+
 ##### Table of Contents
 
-[Google Cloud Setup](1)
+[Google Cloud Setup](/README.md#vm-setup-on-google-cloud)
 
 [Nodes](https://github.com/SirAlfy/EdgeAutoDocs/blob/master/README.md#nodes)
 
