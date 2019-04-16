@@ -77,6 +77,8 @@ Run the bash file to start installing the dependencies
 
 `sh edgeautoSetup.sh`
 
+Open VMInfo and put in all the information you have. Internal IP of this VM, port and the datacenter ip and its port.
+
 After installation you are able to run the socket. I would recommend doing this in a screen
 
 `screen -S PhpSocket`
