@@ -65,6 +65,10 @@ For our DataCenter:
 Create the VM
 
 # Initial Setup on VMs
+Install git if you don't have it 
+
+`sudo apt-get install git`
+
 Pull from my github
 
 `git clone https://github.com/SirAlfy/EdgeAutoDocs.git`
