@@ -25,6 +25,7 @@ while(true) {
          socket_getpeername($newsocket, $ip, $host);
          socket_write($newsocket, "There are " . (count($clients) - 1) . "client(s) connected to the server\n");
          echo "New client connected: {$ip}\n";
+         echo "Time: ".date("h:i:sa")."\n";
          $key = array_search($socket, $read);
          unset($read[$key]);
     }
