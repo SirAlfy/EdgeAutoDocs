@@ -105,13 +105,13 @@ Then put the following in with the following format
 
 We set our VMs to stagger their writing to the datacenter by 15 minutes.
 
-VM1 `0 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:00pm
+VM1 `0,5,10,15,20,25,30,35,40,45,50,55 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php`  This will run every 5 minutes. Ex: 1:00pm, 1:05pm...
 
-VM2 `15 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:15pm
+VM2 `1,6,11,16,21,26,31,36,41,46,51,56 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php` 
 
-VM3 `30 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:30pm
+VM3 `2,7,12,17,22,27,32,37,42,47,52,57 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php` 
 
-VM4 `45 * * * * /EdgeAutoDocs/writeToDC.php` This will run every hour. Ex: 1:45pm
+VM4 `3,8,13,18,23,28,33,38,43,48,53,58 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php` 
 
 
 
