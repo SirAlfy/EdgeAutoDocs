@@ -97,7 +97,7 @@ To send the data to our Datacenter run the following command to execute it once
 
 or you can schedule it by editing your crontab
 
-`sudo crontab -e`
+`crontab -e`
 
 Then put the following in with the following format
 
