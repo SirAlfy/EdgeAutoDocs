@@ -1,13 +1,13 @@
+
 <?php
 include 'VMInfo.php'; //Import global variables
-
 $db = new PDO("mysql:host=localhost;dbname=EdgeAuto", "edgeauto", "edgeauto19!");
 set_time_limit(0);
 ob_implicit_flush();
 //Create the original socket
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP) or die("Could not create socket\n");
 socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1);
-socket_bind($socket, $host, $port) or die("Could not bind to socket\n");
+socket_bind($socket, $hostip, $hostportin) or die("Could not bind to socket\n");
 socket_listen($socket, 3) or die("Could not set up socket listener");
 //This will allow us to handle multiple clients at the same time
 $clients = array($socket);
