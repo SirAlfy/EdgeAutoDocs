@@ -103,9 +103,11 @@ Then put the following in with the following format
 
 `Minute(0-59) Hour(0-23) Day(1-31) Month(1-12) Day of Week (0-6)(0=Sunday) /path/to/yourShellScript`
 
-We set our VMs to stagger their writing to the datacenter by 15 minutes.
+We set our VMs to stagger their writing to the datacenter every minute.
 
-VM1 `0,5,10,15,20,25,30,35,40,45,50,55 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php`  This will run every 5 minutes. Ex: 1:00pm, 1:05pm...
+VM1 `0,5,10,15,20,25,30,35,40,45,50,55 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php`  
+
+This will run every 5 minutes. Ex: 1:00pm, 1:05pm...
 
 VM2 `1,6,11,16,21,26,31,36,41,46,51,56 * * * * php /home/*YOUR USERNAME*/EdgeAutoDocs/writeToDC.php` 
 
